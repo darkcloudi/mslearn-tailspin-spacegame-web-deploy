@@ -75,9 +75,3 @@ stages:
       environment: dev
       variables:
       - group: Release
-      strategy:
-        runOnce:
-          deploy:
-            steps:
-            - download: current
-              artifact: drop
